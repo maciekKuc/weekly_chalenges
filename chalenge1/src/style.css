@@ -1,0 +1,27 @@
+*{
+	font-size: 62.5%;
+}
+
+.container{
+	background-image: url('img/background_big.png');
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.form{
+	background-color: rgb(244, 244, 244);
+}
+
+.form-title{
+	font-size: 3rem;
+	font-family: Hekvetica, Arial;
+}
+
+.input{
+	display: block;
+	margin: 0 auto;
+}
+
+.logo{
+	opacity: 0.3;
+}
