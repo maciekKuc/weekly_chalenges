@@ -7,29 +7,51 @@
 </head>
 <body>
 	<div class="container">
-		<img src="img/logo_main.png" alt="company logo" class="logo">
-		<div class="form form--register">
-			<h1 class="form-title">Register form</h1>
-			<input type="text" class="input">
-			<input type="text" class="input">
-			<input type="text" class="input">
-			<input type="text" class="input">
-			<input type="text" class="input">
-			<input type="text" class="input">
+		<img src="img/logo_main.png" alt="company logo" id="logo-top" class="logo">
+		<div class="col col--left">
+			<form class="form form--register left">
+				<h1 class="form-title">Register Form</h1>
+				<input type="text" class="input user" placeholder="Username">
+				<input type="text" class="input password" placeholder="Password">
+				<input type="text" class="input password" placeholder="Confirm 	Password">
+				<input type="text" class="input email" placeholder="Email">
+				<input type="text" class="input location" placeholder="Your 	Location">
+				<input type="checkbox" class="input">
+				<button class="btn btn-big btn-green">Sign Up</button>
+			</form>
+			<form class="form form--send-email left">
+				<h1 class="form-title">Send Email</h1>
+				<input type="text" class="input user" placeholder="Username">
+				<input type="text" class="input mail" placeholder="Email">
+				<input type="text" class="input" placeholder="Type your message here ...">
+				<input type="checkbox" class="input">
+				<button class="btn btn-big btn-green">Send Email</button>
+			</form>
 		</div>
-		<div class="form form--send-email">
+		<div class="col col--right">
 			
+			<form class="form form--sign-in right">
+				<h1 class="form-title">Sign In Form</h1>
+				<input type="text" class="input user" placeholder="Username">
+				<input type="text" class="input password" placeholder="Password">
+				<input type="text" class="input">
+				<button class="btn btn-small btn-green">Sign in</button>
+			</form>
+			<form class="form form--recover right">
+				<h1 class="form-title">Recover Form</h1>
+				<input type="text" class="input mail" placeholder="Enter your Email">
+				<input type="text" class="input phone" placeholder="Enter yor phone number">
+				<button class="btn btn-small btn-green">Send</button>
+				<button class="btn btn-small btn-green--fade">Done</button>
+			</form>
+			<form class="form form--subscribtion right">
+				<h1 class="form-title">Subscribe Form</h1>
+				<input type="text" class="input mail" placeholder="Enter your Email">
+				<button class="btn btn-small btn-green">Subscribe</button>
+				<button class="btn btn-small btn-red">No</button>
+			</form>
 		</div>
-		<div class="form form--sign-in">
-			
-		</div>
-		<div class="form form--recover">
-			
-		</div>
-		<div class="form form--subscribtion">
-			
-		</div>
-		<img src="img/logo_last.png" alt="company logo" class="logo">
+		<img src="img/logo_last.png" alt="company logo" class="logo logo-right">
 	</div>
 </body>
 </html>
