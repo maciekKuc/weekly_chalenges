@@ -36,25 +36,32 @@
 	margin: 140px 100px;
 	outline: 2rem solid rgba(0, 0, 0, 0.4);
 	position: relative;
+	display: grid;
 }
 
 .form-title{
 	font-size: 3rem;
-	font-family: Hekvetica, Arial;
+	font-family: Helvetica, Arial;
 }
 
 .input{
 	display: block;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
+	text-align: left;
 	font-family: Arial;
 	color: rgb(154, 154, 154);
-	padding: 10px;
 	border: solid 1px rgb(154, 154, 154);
+	border-radius: 2px;
+	background-color: rgb(244, 244, 244);
+	padding: 10px;
 	margin: 10px;
 	padding-left:60px; 
 }
 
-
+.input:hover,
+.input:focus{
+	background-color: rgb(255, 255, 255);
+}
 
 .form-title{
 	color: white;
@@ -78,6 +85,11 @@
 
 .col--left{
 	float: left;
+}
+
+.btn--container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .btn{
@@ -118,7 +130,7 @@
 	background-image: linear-gradient(to bottom, rgb(231, 77, 87), rgb(158, 28, 33));
 }
 
-@media (max-width: 850px){
+@media (max-width: 950px){
 	
 	.col
 	{
