@@ -44,6 +44,22 @@
 	font-family: Helvetica, Arial;
 }
 
+.paragraph{
+	font-size: 1.3rem;
+	font-family: Helvetica, Arial;
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+.input-checkbox{
+	display: inline-block;
+	margin-left: 3rem;
+}
+
+.input-checkbox, .paragraph{
+	
+}
+
 .input{
 	display: block;
 	font-size: 1.3rem;
@@ -56,6 +72,14 @@
 	padding: 10px;
 	margin: 10px;
 	padding-left:60px; 
+}
+
+option{
+	font-size: 1.3rem;
+	padding: 15px;
+	text-align: left;
+	font-family: Arial;
+	color: rgb(154, 154, 154);
 }
 
 .input:hover,
@@ -121,14 +145,55 @@
 	background-image: linear-gradient(to bottom, rgb(142, 209, 61), rgb(51, 156, 10));
 }
 
+.btn-green--fade{
+	background: rgba(148, 213, 64, 0.6);
+	border: solid 1px green;
+}
+
+.btn-green--fade:hover{
+	background-image: linear-gradient(to bottom, rgba(142, 209, 61, 0.6), rgba(51, 156, 10, 0.6));
+}
+
 .btn-red{
 	background: rgb(239, 82, 93);
 	border: solid 1px red;
 }
 
+
+
 .btn-red:hover{
 	background-image: linear-gradient(to bottom, rgb(231, 77, 87), rgb(158, 28, 33));
 }
+
+.user{
+	background-image: url('../img/user.png');
+}
+
+.email{
+	background-image: url('../img/envelope.png');
+}
+
+.password{
+	background-image: url('../img/lock.png');
+}
+
+.phone{
+	background-image: url('../img/phone.png');
+}
+
+.location{
+	background-image: url('../img/google_maps.png');
+}
+
+.user,
+.email,
+.password,
+.phone,
+.location{
+	background-repeat: no-repeat;
+	background-position: 3% 50%;
+}
+
 
 @media (max-width: 950px){
 	
@@ -139,9 +204,9 @@
 	}
 
 	.form{
-		width: 100%;
-		margin-top: 115px;
-		margin-bottom: 0;
+		width: 80%;
+		max-width: 100%;
+		margin: 115px auto 0 auto;
 	}
 
 }

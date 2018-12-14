@@ -12,19 +12,25 @@
 			<form class="form form--register left">
 				<h1 class="form-title">Register Form</h1>
 				<input type="text" class="input user" placeholder="Username">
-				<input type="text" class="input password" placeholder="Password">
-				<input type="text" class="input password" placeholder="Confirm 	Password">
+				<input type="password" class="input password" placeholder="Password">
+				<input type="password" class="input password" placeholder="Confirm 	Password">
 				<input type="text" class="input email" placeholder="Email">
-				<input type="text" class="input location" placeholder="Your 	Location">
-				<input type="checkbox" class="input">
+				<select name="location" id="" class="input location">
+					<option>Białystok</option>
+					<option>Warszawa</option>
+					<option>Gdańsk</option>
+					<option>Wrocław</option>
+					<option>Kraków</option>
+				</select>
+				<div><input type="checkbox" class='input-checkbox'><p class='paragraph'>I have read and accept the terms of use</p></div>
 				<button class="btn btn-big btn-green">Sign Up</button>
 			</form>
 			<form class="form form--send-email left">
 				<h1 class="form-title">Send Email</h1>
 				<input type="text" class="input user" placeholder="Username">
-				<input type="text" class="input mail" placeholder="Email">
+				<input type="email" class="input mail" placeholder="Email">
 				<input type="text" class="input" placeholder="Type your message here ...">
-				<input type="checkbox" class="input">
+				<div><input type="checkbox" class='input-checkbox'><p class='paragraph'>Send a copy to my Email</p></div>
 				<button class="btn btn-big btn-green">Send Email</button>
 			</form>
 		</div>
@@ -35,7 +41,7 @@
 				<input type="text" class="input user" placeholder="Username">
 				<input type="text" class="input password" placeholder="Password">
 				<div class="btn--container">
-					<input type="checkbox" class="input">
+					<div><input type="checkbox" class='input-checkbox'><p class='paragraph'>Remember me</p></div>
 					<button class="btn btn-small btn-green">Sign in</button>
 				</div>
 				
