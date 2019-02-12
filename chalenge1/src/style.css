@@ -1,5 +1,5 @@
 *{
-	font-size: 62.5%;
+	font-size: 62.5%; 
 }
 
 .container{
@@ -71,7 +71,7 @@
 	background-color: rgb(244, 244, 244);
 	padding: 10px;
 	margin: 10px;
-	padding-left:60px; 
+	padding-left:80px; 
 }
 
 option{
@@ -191,11 +191,13 @@ option{
 .phone,
 .location{
 	background-repeat: no-repeat;
-	background-position: 3% 50%;
+	background-position: 5% 50%;
+	background-size: 50px 100%;
 }
 
 
-@media (max-width: 950px){
+@media (max-width: 950px)
+	and (-webkit-max-device-pixel-ratio: 2){
 	
 	.col
 	{
@@ -207,6 +209,11 @@ option{
 		width: 80%;
 		max-width: 100%;
 		margin: 115px auto 0 auto;
+	}
+
+	.col-left,
+	.col-right{
+		float: none;
 	}
 
 }
