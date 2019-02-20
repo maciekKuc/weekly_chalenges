@@ -2,6 +2,10 @@
 	--light-blue: rgb(78, 216, 200);
 }
 
+html{
+	font-family: Raleway, sans-serif;
+}
+
 #brand{
 	font-family: Pacifico, Arial;
 	font-size: 2rem;
@@ -16,11 +20,15 @@
 }
 
 .hero{
+	background-image: url('../img/header/header_img.png');
+}
 
+.hero__content{
+	width: 50%;
 }
 
 .about{
-
+	background-image: url('../img/header/raspberries');
 }
 
 .services{
@@ -32,6 +40,11 @@
 .services__content{
 	display: grid;
 	grid-gap: 20px;
+}
+
+.services__title{
+	background-image: url('../img/services/tomatoes.png');
+	background-position: center;
 }
 
 .services__card{
@@ -51,7 +64,7 @@
 }
 
 .subscribe{
-
+	background-image: url('../img/services/bgc-subscribe-big.png');
 }
 
 .blog{
@@ -60,7 +73,7 @@
 
 .contact{
 	display: grid;
-	
+	background-image: url('../img/contact/contact-bgc.png');
 }
 
 .contact__content{
@@ -80,4 +93,41 @@
 
 .contact__message{
 	height: 10rem;
+}
+
+.hero,
+.about,
+.services__title,
+.subscribe,
+.contact{
+	background-repeat: no-repeat;
+}
+.btn{
+	text-transform: uppercase;
+	border: none;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	color: white;
+	font-size: 19px;
+	font-family: inherit;
+}
+
+.btn--orange{
+	padding: 10px;
+	background-color: #ff6033;
+}
+
+.btn--blue{
+	background-color: #5585A2;
+}
+
+.btn--green{
+	background-color: #96B92C;
+}
+
+.btn--red{
+	background-color: #F72B3B;
+}
+
+.btn--teal{
+	background-color: var(--light-blue);
 }
