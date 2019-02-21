@@ -99,42 +99,106 @@ html{
 .services__content{
 	display: grid;
 	grid-gap: 20px;
+	grid-template-columns: 1fr minmax(300px, 515px) 1fr;
+	align-content: center;
+}
+
+.services__card{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	align-items: center;
+	justify-items: center;
+	grid-column: 2 / 3;
+	background-color: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	height: 75px;
+	
+}
+
+.secrices__card-name{
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.services__icon{
+	height: 4.5rem;
+	width: 4.5rem;
+	fill: black;
+	
 }
 
 .services__title{
 	background-image: url('../img/services/tomatoes.png');
 	background-position: center;
 	color: #FFF;
-}
-
-.services__card{
 	display: grid;
-	grid-template-columns: 1fr min-content;
-	background-color: #fff;
-}
-
-.services__icon{
-	height: 3rem;
-	width: 3rem;
-	fill: black;
+	align-content: center;
+	justify-content: center;
 }
 
 .gallery{
+	display: grid;
+	grid-column: 1fr min-content 1fr;
 	min-height: 1320px;
+	background-color: #FFE92F;
+}
+
+.gallery__container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 200px) 320px;
+	grid-gap: 30px;
+	grid-column: 2 / 3;
+	width: 990px;
+}
+
+.gallery__img{
+	width: 100%;
+}
+
+.gallery__img--1{
+	grid-column: 1 / 4;
+}
+
+.gallery__img--2{
+	grid-column: 4 / 6;
+}
+
+.gallery__img--3{
+	grid-column: 4 / 6;
+}
+
+.gallery__img--4{
+	grid-column: 1 / 4;
+}
+
+.gallery__img--5{
+	grid-column: 1 / 4;
+}
+
+.gallery__img--6{
+	visibility: hidden;
+}
+
+.gallery__img--7{
+	visibility: hidden;
 }
 
 .subscribe{
-	background-image: url('../img/services/bgc-subscribe-big.png');
+	background-image: url('../img/subscribe/bgc-subscribe-big.png');
 	min-height: 460px;
 }
 
 .blog{
 	min-height: 800px;
+	background-color: #B07CF7;
 }
 
 .contact{
 	display: grid;
 	background-image: url('../img/contact/contact-bgc.png');
+	background-size: cover;
 	min-height: 930px;
 }
 
