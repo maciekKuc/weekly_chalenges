@@ -264,8 +264,68 @@ html{
 }
 
 .blog{
+	display: grid;
+	grid-template-columns: 1fr min-content 1fr;
 	min-height: 800px;
 	background-color: #B07CF7;
+	color: #FFF;
+	justify-items: center;
+}
+
+.blog__content,
+.btn--red,
+.blog .section__title--big,
+.blog .section__paragraph--small{
+	grid-column: 2 / 3;
+}
+
+.blog__content{
+	display: grid;
+	grid-template-columns: repeat(3, 320px);
+	grid-template-rows: 290px;
+	grid-gap: 20px;
+}
+
+.blog__card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.blog__card--1{
+	background-image: url('../img/blog/blog_one.png');
+	grid-column: 1 / 2;
+}
+
+.blog__card--2{
+	background-image: url('../img/blog/blog_two.png');
+	grid-column: 2 / 3;
+}
+
+.blog__card--3{
+	background-image: url('../img/blog/blog_three.png');
+	grid-column: 3 / 4;
+}
+
+.blog__date{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	font-size: 2.1rem;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.blog__card-title{
+	font-size: 2.1rem;
+	font-weight: 700;
+}
+
+.blog__card-author{
+	font-size: 1.4rem;
 }
 
 .contact{
@@ -301,6 +361,7 @@ html{
 .contact{
 	background-repeat: no-repeat;
 }
+
 .btn{
 	text-transform: uppercase;
 	border: none;
@@ -308,6 +369,11 @@ html{
 	color: white;
 	font-size: 1.9rem;
 	font-family: inherit;
+	transition: all 0.2s;
+}
+
+.btn:active{
+	transform: translateY(50px;);
 }
 
 .btn--orange{
@@ -328,6 +394,8 @@ html{
 .btn--red{
 	padding: 20px 30px;
 	background-color: #F72B3B;
+	justify-self: center;
+	align-self: center;
 }
 
 .btn--teal{
