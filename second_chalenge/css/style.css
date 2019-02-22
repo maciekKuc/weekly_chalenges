@@ -87,6 +87,21 @@ html{
 	position: absolute;
 	top: 40px;
 	right: 50%;
+	border: solid 3px black;
+	border-radius: 30%;
+	width: 25px;
+	height: 40px;
+}
+
+.about__scroll-bar{
+	background-color: #000;
+	width: 3px;
+	height: 12px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	border-radius: 30%;
+	animation: scroll 2s infinite;
 }
 
 .services{
@@ -285,4 +300,20 @@ html{
 .section__paragraph--big{
 	font-size: 2.1rem;
 	line-height: 3.3rem;
+}
+
+@keyframes scroll{
+	0%{
+		opacity:1;
+		transform: translate(-50%, 50%);
+	}
+
+	80%{
+		opacity:1;
+	}
+
+	100%{
+		opacity: 0;
+		transform: translate(-50%, 100%);
+	}
 }
