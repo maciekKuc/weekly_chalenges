@@ -1,5 +1,5 @@
 :root{
-	--light-blue: rgb(78, 216, 200);
+	--light-blue: #70BFFF;
 }
 
 html{
@@ -74,7 +74,8 @@ html{
 	min-height: 725px;
 	color: white;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-gap: 100px;
+	grid-template-columns: min-content 1fr;
 	align-content: center;
 	position: relative;
 }
@@ -82,6 +83,11 @@ html{
 .about__content{
 	grid-column: 2 / 3;
 }
+
+.about__content{
+	max-width: 80%;
+}
+
 
 .about__scroll{
 	position: absolute;
@@ -116,6 +122,7 @@ html{
 	grid-gap: 20px;
 	grid-template-columns: 1fr minmax(300px, 515px) 1fr;
 	align-content: center;
+	margin: 2rem 0;
 }
 
 .services__card{
@@ -127,7 +134,7 @@ html{
 	background-color: #fff;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 	height: 75px;
-	
+	cursor: pointer;
 }
 
 .secrices__card-name{
@@ -142,6 +149,13 @@ html{
 	fill: black;
 	
 }
+
+.services__card-text{
+	color: #FFF;
+	grid-column: 2 / 3;
+	display: none;
+}
+
 
 .services__title{
 	background-image: url('../img/services/tomatoes.png');
