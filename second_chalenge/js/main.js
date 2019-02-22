@@ -1,8 +1,10 @@
 const showText = (e) =>{
-	if(e.currentTarget.nextSibling.nextSibling.style.display === 'none'){
-		e.currentTarget.nextSibling.nextSibling.style.display = 'block';
-	}else{
-		e.currentTarget.nextSibling.nextSibling.style.display = 'none';
-	}
-	
+	e.currentTarget.nextSibling.nextSibling.classList.toggle('services__card-text');
+	e.currentTarget.nextSibling.nextSibling.classList.toggle('services__card-text--visible');	
 }
+
+document.addEventListener('scroll, '() => {
+	if(window.scrollTop > 50){
+		document.querySelector('.navbar').style.backgroundColor = 'white';
+	}
+});
