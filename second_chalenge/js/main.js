@@ -3,8 +3,21 @@ const showText = (e) =>{
 	e.currentTarget.nextSibling.nextSibling.classList.toggle('services__card-text--visible');	
 }
 
-document.addEventListener('scroll, '() => {
+const showMore = (objectArr) => {
+	objectArr.forEach((object) => {
+		object.classList.toggle()
+	})
+}
+
+const blueButtonArr = [];
+const redButtonArr = [];
+
+document.querySelector('btn--blue').addEventListener(() => showMore(blueButtonArr));
+
+
+document.addEventListener('scroll', () => {
 	if(window.scrollTop > 50){
-		document.querySelector('.navbar').style.backgroundColor = 'white';
+		document.querySelector('.navbar').style.backgroundColor = 'transparent';
 	}
 });
+
