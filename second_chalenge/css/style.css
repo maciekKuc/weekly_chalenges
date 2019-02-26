@@ -342,10 +342,19 @@ html{
 	grid-template-columns: 1fr 1fr;
 }
 
+.contact__form{
+	display: grid;
+	grid-gap: 20px;
+	color: white;
+}
+
 .contact__input,
 .contact__message{
-	background-color: rgba(78, 216, 200, 0.6);
+	background-color: rgba(0, 196, 196, .5);
 	width: 80%;
+	border: none;
+	padding: 15px;
+	color: white;
 }
 
 .contact__input{
@@ -417,6 +426,10 @@ html{
 .section__title--huge{
 	font-weight: 700;
 	font-size: 8rem;
+}
+
+.contact .section__title--huge{
+	text-align: center;
 }
 
 
