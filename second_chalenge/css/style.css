@@ -337,6 +337,10 @@ html{
 	min-height: 930px;
 }
 
+.contact .section__paragraph--small{
+	text-align: center;
+}
+
 .contact__content{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -363,6 +367,15 @@ html{
 
 .contact__message{
 	height: 10rem;
+}
+
+.contact__text{
+	font-size: 21px;
+}
+
+.contact__text--bold{
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .hero,
@@ -412,6 +425,8 @@ html{
 .btn--teal{
 	padding: 20px 50px;
 	background-color: var(--light-blue);
+	justify-self: center;
+	align-self: center;
 }
 
 .section__title--small{

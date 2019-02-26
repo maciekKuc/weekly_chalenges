@@ -5,14 +5,20 @@ const showText = (e) =>{
 
 const showMore = (objectArr) => {
 	objectArr.forEach((object) => {
-		object.classList.toggle()
+		//object.classList.toggle()
+		console.log(object);
+		object.style.visibility = 'visible';
+		if(object.style.visibility == 'hidden'){
+			console.log('shit happens');
+			object.style.visibility = 'visible';
+		}
 	})
 }
 
-const blueButtonArr = [];
+const blueButtonArr = [document.querySelector('.gallery__img--6'), document.querySelector('.gallery__img--7')];
 const redButtonArr = [];
 
-document.querySelector('btn--blue').addEventListener(() => showMore(blueButtonArr));
+document.querySelector('.btn--blue').addEventListener('click', () => showMore(blueButtonArr));
 
 
 document.addEventListener('scroll', () => {
