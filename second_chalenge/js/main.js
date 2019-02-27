@@ -5,20 +5,16 @@ const showText = (e) =>{
 
 const showMore = (objectArr) => {
 	objectArr.forEach((object) => {
-		//object.classList.toggle()
-		console.log(object);
-		object.style.visibility = 'visible';
-		if(object.style.visibility == 'hidden'){
-			console.log('shit happens');
-			object.style.visibility = 'visible';
-		}
-	})
+		object.style.display === 'block' ? object.style.display = 'none' : object.style.display = 'block';
+	});
 }
 
 const blueButtonArr = [document.querySelector('.gallery__img--6'), document.querySelector('.gallery__img--7')];
-const redButtonArr = [];
+const redButtonArr = [document.querySelector('.blog__card--4'), document.querySelector('.blog__card--5')];
 
 document.querySelector('.btn--blue').addEventListener('click', () => showMore(blueButtonArr));
+
+document.querySelector('.btn--red').addEventListener('click', () => showMore(redButtonArr));
 
 
 document.addEventListener('scroll', () => {
