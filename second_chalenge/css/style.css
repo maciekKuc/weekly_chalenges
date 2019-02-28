@@ -1,5 +1,11 @@
 :root{
+	/* colors */
 	--light-blue: #70BFFF;
+	
+	/* media queries */
+	--medium: 1350px;
+	--small: 800px;
+	--smaller: 600px;
 }
 
 html{
@@ -255,7 +261,7 @@ html{
 	margin-left: 30px;
 }
 
-.subscribe__content  .section__paragraph--small{
+.subscribe__content  .section__paragraph--big{
 	width: 60%;
 }
 
@@ -284,7 +290,7 @@ html{
 .blog__content{
 	display: grid;
 	grid-template-columns: repeat(3, 320px);
-	grid-template-rows: repeat(auto, 290px);
+	grid-auto-rows: 290px;
 	grid-gap: 20px;
 }
 
@@ -293,6 +299,7 @@ html{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	transition: all 0.2s;
 }
 
 .blog__card--1{
@@ -314,12 +321,20 @@ html{
 	background-image: linear-gradient(transparent, rgba(0,0,0, .9)), url('../img/blog/blog_three.png');
 	grid-column: 2 / 3;
 	display: none;
+	transform: translateX(-50%);
 }
 
 .blog__card--5{
 	background-image: linear-gradient(transparent, rgba(0,0,0, .9)), url('../img/blog/blog_three.png');
 	grid-column: 3 / 4;
 	display: none;
+	transform: translateX(-50%);
+}
+
+.blog__card--1,
+.blog__card--2,
+.blog__card--3{
+	grid-row: 1 / 2;
 }
 
 .blog__date{
@@ -360,17 +375,19 @@ html{
 
 .contact__form{
 	display: grid;
+	grid-template-columns: 1fr minmax(300px, 400px) 1fr;
 	grid-gap: 20px;
 	color: white;
+	
 }
 
 .contact__input,
 .contact__message{
 	background-color: rgba(0, 196, 196, .5);
-	width: 80%;
 	border: none;
 	padding: 15px;
 	color: white;
+	grid-column: 2 / 3;
 }
 
 .contact__input{
@@ -420,6 +437,7 @@ html{
 .btn--blue{
 	padding: 20px;
 	background-color: #5585A2;
+	
 }
 
 .btn--green{
@@ -432,6 +450,8 @@ html{
 	background-color: #F72B3B;
 	justify-self: center;
 	align-self: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .btn--teal{
@@ -439,6 +459,7 @@ html{
 	background-color: var(--light-blue);
 	justify-self: center;
 	align-self: center;
+	grid-column: 2 / 3;
 }
 
 .section__title--small{
@@ -463,10 +484,11 @@ html{
 .section__paragraph--small{
 	font-size: 1.4rem;
 	line-height: 2.2rem;
+	text-align: center;
 }
 
 .section__paragraph--big{
-	font-size: 2.1rem;
+	font-size: 1.9rem;
 	line-height: 3.3rem;
 }
 
@@ -483,5 +505,11 @@ html{
 	100%{
 		opacity: 0;
 		transform: translate(-50%, 100%);
+	}
+}
+
+@media screen and (max-width: 1350px){
+	.services{
+		grid-template-columns: 1fr;
 	}
 }

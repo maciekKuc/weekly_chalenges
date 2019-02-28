@@ -5,7 +5,7 @@ const showText = (e) =>{
 
 const showMore = (objectArr) => {
 	objectArr.forEach((object) => {
-		object.style.display === 'block' ? object.style.display = 'none' : object.style.display = 'block';
+		object.style.display === 'flex' ? object.style.display = 'none' : object.style.display = 'flex';
 	});
 }
 
