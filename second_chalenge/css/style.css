@@ -390,6 +390,11 @@ html{
 	grid-column: 2 / 3;
 }
 
+.contact__input::placeholder,
+.contact__message::placeholder{
+	color: white;
+}
+
 .contact__input{
 	
 }
@@ -508,8 +513,25 @@ html{
 	}
 }
 
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1050px){
 	.services{
 		grid-template-columns: 1fr;
+	}
+
+	.services__title{
+		grid-row: 1 / 2;
+		height: 60vw;
+	}
+
+	.gallery__container{
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-content: space-between;
+		grid-auto-rows: 1500px;
+	}
+
+	.gallery__img{
+		grid-column: 1 / 2;
+		width: 60vw;
 	}
 }
