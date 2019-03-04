@@ -11,6 +11,7 @@
 html{
 	font-family: Raleway, sans-serif;
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 #brand{
@@ -25,7 +26,6 @@ html{
 	width: 100%;
 	padding: 20px;
 	z-index:10;
-	background-color: #fff;
 	margin-top: 0;
 }
 
@@ -82,7 +82,6 @@ html{
 }
 
 .about{
-	background-image: url('../img/header/raspberries.png');
 	background-color: #00B0B0;
 	min-height: 725px;
 	color: white;
@@ -514,6 +513,17 @@ html{
 }
 
 @media screen and (max-width: 1050px){
+	.about{
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.about__picture,
+	.about__content{
+		grid-column: 1 / 2;
+		text-align: center;
+	}
+
 	.services{
 		grid-template-columns: 1fr;
 	}
@@ -527,11 +537,26 @@ html{
 		grid-template-columns: 1fr;
 		justify-items: center;
 		align-content: space-between;
-		grid-auto-rows: 1500px;
+		grid-auto-rows: 60vw;
 	}
 
 	.gallery__img{
 		grid-column: 1 / 2;
+		grid-row: span 1;
 		width: 60vw;
+		height: 40vw;
+	}
+
+	.section__title--big{
+		font-size: 3.6rem;
+	}
+
+	.section__title--huge{
+		font-size: 5.6rem;
+	}
+
+	.section__paragraph--big{
+		font-size: 1.4rem;
+		line-height: 2.2rem;
 	}
 }

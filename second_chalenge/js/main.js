@@ -18,7 +18,9 @@ document.querySelector('.btn--red').addEventListener('click', () => showMore(red
 
 
 document.addEventListener('scroll', () => {
-	if(window.scrollTop > 50){
+	if(window.pageYOffset > 50){
+		document.querySelector('.navbar').style.backgroundColor = 'white';
+	}else{
 		document.querySelector('.navbar').style.backgroundColor = 'transparent';
 	}
 });
