@@ -48,6 +48,12 @@ html{
 	margin-left: 20px;
 	font-size: 2.2rem;
 	position: relative;
+	border-top: solid 3px transparent;
+	transform: translateY(-3px);
+}
+
+.nav__item:hover{
+	border-top: solid 3px #FF6033;
 }
 
 .nav__item:hover .nav__item::before{
@@ -441,7 +447,7 @@ html{
 .btn--blue{
 	padding: 20px;
 	background-color: #5585A2;
-	
+	margin: 2rem 0;
 }
 
 .btn--green{
@@ -513,6 +519,10 @@ html{
 }
 
 @media screen and (max-width: 1050px){
+	.nav__navbar{
+		flex-direction: row;
+	}
+
 	.about{
 		grid-template-columns: 1fr;
 		justify-items: center;
