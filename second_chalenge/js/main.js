@@ -27,26 +27,26 @@ document.addEventListener('scroll', () => {
 
 	if(window.pageYOffset < document.getElementById('about').offsetTop){
 		document.querySelector('.nav__navbar :nth-child(1)').style.borderTop = 'solid 3px #FF6033';
-		document.querySelector('.nav__navbar :nth-child(2)').style.borderTop = 'none';
+		document.querySelector('.nav__navbar :nth-child(2)').style.borderTop = 'solid 3px transparent';
 	} else if (window.pageYOffset >= document.getElementById('about').offsetTop && window.pageYOffset < document.getElementById('services').offsetTop) {
 		document.querySelector('.nav__navbar :nth-child(2)').style.borderTop = 'solid 3px #FF6033';
-		document.querySelector('.nav__navbar :nth-child(1)').style.borderTop = 'none';
-		document.querySelector('.nav__navbar :nth-child(3)').style.borderTop = 'none';
+		document.querySelector('.nav__navbar :nth-child(1)').style.borderTop = 'solid 3px transparent';
+		document.querySelector('.nav__navbar :nth-child(3)').style.borderTop = 'solid 3px transparent';
 	} else if (window.pageYOffset >= document.getElementById('services').offsetTop && window.pageYOffset < document.getElementById('gallery').offsetTop) {
 		document.querySelector('.nav__navbar :nth-child(3)').style.borderTop = 'solid 3px #FF6033';
-		document.querySelector('.nav__navbar :nth-child(2)').style.borderTop = 'none';
-		document.querySelector('.nav__navbar :nth-child(4)').style.borderTop = 'none';
+		document.querySelector('.nav__navbar :nth-child(2)').style.borderTop = 'solid 3px transparent';
+		document.querySelector('.nav__navbar :nth-child(4)').style.borderTop = 'solid 3px transparent';
 	} else if (window.pageYOffset >= document.getElementById('gallery').offsetTop && window.pageYOffset < document.getElementById('blog').offsetTop) {
 		document.querySelector('.nav__navbar :nth-child(4)').style.borderTop = 'solid 3px #FF6033';
-		document.querySelector('.nav__navbar :nth-child(3)').style.borderTop = 'none';
-		document.querySelector('.nav__navbar :nth-child(5)').style.borderTop = 'none';
+		document.querySelector('.nav__navbar :nth-child(3)').style.borderTop = 'solid 3px transparent';
+		document.querySelector('.nav__navbar :nth-child(5)').style.borderTop = 'solid 3px transparent';
 	} else if (window.pageYOffset >= document.getElementById('blog').offsetTop  && window.pageYOffset < document.getElementById('contact').offsetTop) {
 		document.querySelector('.nav__navbar :nth-child(5)').style.borderTop = 'solid 3px #FF6033';
-		document.querySelector('.nav__navbar :nth-child(4)').style.borderTop = 'none';
-		document.querySelector('.nav__navbar :nth-child(6)').style.borderTop = 'none';
+		document.querySelector('.nav__navbar :nth-child(4)').style.borderTop = 'solid 3px transparent';
+		document.querySelector('.nav__navbar :nth-child(6)').style.borderTop = 'solid 3px transparent';
 	} else if (window.pageYOffset >= document.getElementById('contact').offsetTop) {
 		document.querySelector('.nav__navbar :nth-child(6)').style.borderTop = 'solid 3px #FF6033';
-		document.querySelector('.nav__navbar :nth-child(5)').style.borderTop = 'none';
+		document.querySelector('.nav__navbar :nth-child(5)').style.borderTop = 'solid 3px transparent';
 	}
 });
 
