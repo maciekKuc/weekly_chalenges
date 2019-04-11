@@ -98,6 +98,9 @@ html{
 	max-width: 80%;
 }
 
+.about__picture{
+	max-width: 100%;
+}
 
 .about__scroll{
 	position: absolute;
@@ -538,6 +541,10 @@ html{
 		padding: 1rem;
 	}
 
+	.hero{
+		min-height: 640px;
+	}
+
 	.about{
 		grid-template-columns: 1fr;
 		justify-items: center;
@@ -631,5 +638,31 @@ html{
 
 	.subscribe__content  .section__paragraph--big{
 		width: 100%;
+	}
+
+	.contact__content{
+		grid-template-columns: 1fr;
+	}
+
+	.contact__info{
+		color: white;
+		padding: 3rem;
+	}
+
+	.contact__text:nth-child(2n + 1){
+		font-size: 1.6rem;
+	}
+
+	.contact__text:nth-child(2n){
+		font-size: 1.3rem;
+	}
+
+	.subscribe__input{
+		width: 80vw;
+		margin-bottom: 2rem;
+	}
+
+	.btn--green{
+		width: 87vw;
 	}
 }
