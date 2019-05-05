@@ -1,3 +1,11 @@
+const burgerButton = document.querySelector('.nav__burger');
+const navMenu  =document.querySelector('.nav');
+
+burgerButton.addEventListener('click', () =>{
+  navMenu.classList.toggle('visible');
+});
+
+
 const showText = (e) =>{
 	e.currentTarget.nextSibling.nextSibling.classList.toggle('services__card-text');
 	e.currentTarget.nextSibling.nextSibling.classList.toggle('services__card-text--visible');	
