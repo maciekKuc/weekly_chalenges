@@ -18,6 +18,7 @@ html{
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
+	box-sizing: border-box;
 	top: 0;
 	width: 100vw;
 	padding: 20px;
@@ -29,7 +30,7 @@ html{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-right: 80px;
+	
 }
 
 .nav__navbar{
@@ -132,7 +133,7 @@ html{
 .services__content{
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr minmax(300px, 515px) 1fr;
+	grid-template-columns: 1fr minmax(250px, 515px) 1fr;
 	align-content: center;
 	margin: 2rem 0;
 }
@@ -149,7 +150,7 @@ html{
 	cursor: pointer;
 }
 
-.secrices__card-name{
+.services__card-name{
 	font-size: 1.9rem;
 	font-weight: 700;
 	text-align: center;
@@ -375,7 +376,7 @@ html{
 
 .contact__form{
 	display: grid;
-	grid-template-columns: 1fr minmax(300px, 400px) 1fr;
+	grid-template-columns: 1fr minmax(250px, 400px) 1fr;
 	grid-gap: 20px;
 	color: white;
 	
@@ -544,7 +545,7 @@ html{
 		display: block;
 		position: absolute;
 		top: 2rem;
-		right: 10rem;
+		right: 5rem;
 	}
 
 	.nav__burger,
@@ -672,11 +673,24 @@ html{
 
 @media screen and (max-width: 750px){
 	.navbar{
-		width: 100%;
+		width: 100vw;
 	}
 
-	.secrices__card-name{
-		font-size: 1.6rem;
+	#brand{
+		width: 80px;
+	}
+	.services__card{
+		grid-template-columns: minmax(min-content, 4fr) 1fr;
+	}
+	
+
+	.services__card-name{
+		font-size: 1.4rem;
+	}
+
+	.services__icon{
+		width: 3rem;
+		height: 3rem;
 	}
 
 	.subscribe__content{
@@ -714,5 +728,13 @@ html{
 
 	.btn--green{
 		width: 65vw;
+	}
+
+	.section__title--big{
+		font-size: 3rem;
+	}
+
+	.section__title--huge{
+		font-size: 4.2rem;
 	}
 }
